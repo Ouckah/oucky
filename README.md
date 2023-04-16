@@ -8,6 +8,14 @@ The community response was overwhelming. Many members stepped forward, offering 
 
 As the bot took shape, it became clear that Oucky was not just a tool for enhancing the Discord server experience, but also a symbol of the community's unity and creativity. Members who had worked on the bot felt a sense of ownership and pride in what they had achieved. The bot was officially launched with great fanfare, and it quickly became a beloved addition to the Discord server.
 
+## What We Learned
+To build Oucky, the team used a range of skills including Discord.js, Node.js, and Javascript API usage. They also relied heavily on collaborative skills using Github, working together to share code, track issues and merge changes to the project. The team was made up of developers from all over the world, with different levels of expertise and backgrounds, but they all shared a passion for computer science and a desire to create something useful for the Ouckah community.
+
+### Our Tech Stack
+![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
+![Discord](https://user-images.githubusercontent.com/43829909/232261505-16c284ec-519e-4a9b-8408-3388bd0eb249.svg)
+
 ## Features
 
 Here are some of the features that Oucky offers:

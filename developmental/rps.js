@@ -1,5 +1,7 @@
 const { SlashCommandBuilder } = require("discord.js");
 
+// TODO: Fix error (I'm not sure what it is, a lot will be put with issue)
+
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("rps")

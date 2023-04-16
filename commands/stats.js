@@ -18,7 +18,7 @@ async function generateStats(interaction)
   // get server stats
     const guild = interaction.guild;
     const roles = guild.roles.cache;
-    const emojisCount = emojis.size;
+    // const emojisCount = emojis.size; // TODO: Fix emojis reference
     const rolesCount = roles.size;
 
   message.edit([
@@ -28,7 +28,7 @@ async function generateStats(interaction)
     `:robot: Server owner: ${guild.owner}`,
     `:robot: Server region: ${guild.region}`,
     `:robot: Server member count: ${guild.memberCount}`,
-    `:robot: Server roles count: ${rolesCount}`,
-    `:robot: Server emojis count: ${emojisCount}`
+    `:robot: Server roles count: ${rolesCount}`
+    // `:robot: Server emojis count: ${emojisCount}` // TODO: Fix emojis reference
   ].join("\n"));
 }

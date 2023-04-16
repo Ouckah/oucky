@@ -14,7 +14,8 @@ To build Oucky, the team used a range of skills including Discord.js, Node.js, a
 ### Our Tech Stack
 ![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
-![Discord](https://user-images.githubusercontent.com/43829909/232261505-16c284ec-519e-4a9b-8408-3388bd0eb249.svg)
+![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+
 
 ## Features
 

@@ -5,7 +5,7 @@ module.exports = {
     .setName("ping")
     .setDescription("Replies with actual bot ping! by Fluid#2654"),
   async execute(interaction) {
-    await ping(interaction)
+    await ping(interaction);
   },
 };
 

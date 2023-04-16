@@ -26,7 +26,7 @@ async function generateStats(interaction)
     `:robot: Server name: ${guild.name}`,
     `:robot: Server ID: ${guild.id}`,
     `:robot: Server member count: ${guild.memberCount}`,
-    `:robot: Server roles count: ${rolesCount}`
+    `:robot: Server roles count: ${rolesCount}`,
     `:robot: Server emojis count: ${emojisCount}`
   ].join("\n"));
 }

@@ -1,31 +1,45 @@
 const { SlashCommandBuilder } = require('discord.js');
 
-const axios = require('axios');
+// openai api
 const { openaiKey } = require('../config.json');
 
+// axios
+const axios = require('axios');
 const client = axios.create({
     headers: {
         Authorization: "Bearer " + openaiKey,
     },
 });
 
-const params = {
-    prompt: "How are you?",
-    model: "text-davinci-003",
-    max_tokens: 10,
-    temperature: 0,
-};
-
 module.exports = {
 	data: new SlashCommandBuilder()
+
+        // logistics
 		.setName('talk')
-		.setDescription('Talk to an AI!'),
+		.setDescription('Talk to an AI!')
+
+        // options
+        .addStringOption(option =>
+            option.setName('input')
+                .setDescription('The input to give to our AI!')
+                .setRequired(true)),
+
 	async execute(interaction) {
 		await generateResponse(interaction);
 	},
 };
 
 async function generateResponse(interaction) {
+
+    const input = interaction.options.getString('input');
+
+    const params = {
+        prompt: input,
+        model: "text-davinci-003",
+        max_tokens: 10,
+        temperature: 0,
+    };
+
     client
         .post("https://api.openai.com/v1/completions", params)
         .then((result) => {

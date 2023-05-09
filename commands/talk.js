@@ -36,8 +36,8 @@ async function generateResponse(interaction) {
     const params = {
         prompt: input,
         model: "text-davinci-003",
-        max_tokens: 10,
-        temperature: 0,
+        max_tokens: 100,
+        temperature: 0.8,
     };
 
     client
@@ -45,6 +45,7 @@ async function generateResponse(interaction) {
         .then((result) => {
             const response = result.data.choices[0].text;
             interaction.reply(response);
+            console.log(response);
         })
         .catch((err) => {
             console.log(err);

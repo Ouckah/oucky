@@ -24,7 +24,7 @@ client.once(Events.ClientReady, c => {
 // Log in to Discord with your client's token
 client.login(token);
 
-client.commands = new Collection()
+client.commands = new Collection();
 
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
@@ -44,7 +44,7 @@ for (const file of commandFiles) {
 
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
-    client.commands.set(command.name, command)
+    client.commands.set(command.name, command);
 }
 
 // client interaction
